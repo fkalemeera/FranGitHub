@@ -1,0 +1,320 @@
+#Data science notes from IBM Datascience course
+10 min of videos left
+All readings completed
+All graded assignments completed
+________________________________________
+In this module, you will hear from Norman White, the Faculty Director of the Stern Centre for Research Computing at New York University, as he talks about data science and the skills required for anyone interested in pursuing a career in this field. He also advises those looking to start a career in data science. Finally, you will complete reading assignments to learn about the process of mining a given dataset and about regression analysis.
+Learning Objectives________________________________________
+•	Define Big Data and its distinguishing characteristics, such as velocity, volume, veracity, and value
+ 
+•	Describe how Hadoop and other big data tools, combined with distributed computing power, are triggering digital transformation.
+•	List some of the skills required to be a data scientist and analyse big data. List some of the skills required to analyse big data.
+•	Explain what data mining is.
+•	Summarize the importance of establishing goals, data selection, pre-processing, transformation, and storage of data in preparation for data mining: EDaPTS-DM.
+ 
+•	Explain the difference between deep learning and machine learning.
+•	Describe regression and how it might be used to predict market behaviour and trend analysis
+Data Science Saving Lives via
+Data Science in Heath Care utilising … 
+•	Data mining
+•	Data modelling
+•	Statistics 
+•	Machine learning
+ 
+Including a host of variables to identify predictors of 
+
+The languages of Data Science:
+The three recommended languages are;
+1.	Python
+2.	R
+3.	SQL
+Others include:
+1.	Scala
+2.	Java
+3.	C++
+4.	Julia
+5.	JS
+6.	php
+7.	Go
+8.	Visual Basic
+The choice of language depends on the problem one needs to solve!!!!
+Data management
+In part one of this two-part series, we’ll cover data management, open source data integration, 
+transformation, and visualization tools. 
+The most widely used open source data management tools are relational databases such as 
+MySQL and PostgreSQL; NoSQL databases such as MongoDB Apache CouchDB, and Apache Cassandra; 
+and file-based tools such as the Hadoop File System or Cloud File systems like Ceph. 
+Finally, Elasticsearch is mainly used for storing text data and creating a search index for 
+fast document retrieval. 
+The task of data integration and transformation in the classic data warehousing world is called 
+ETL, which stands for “extract, transform, and load.” 
+These days, data scientists often propose the term “ELT” – 
+
+Extract, Load, Transform “ELT”, 
+stressing the fact that data is dumped somewhere and the data engineer or data scientist themself 
+is responsible for data. 
+Another term for this process has now emerged: “data refinery and cleansing.” 
+Here are the most widely used open source data integration and transformation tools: 
+Apache AirFlow, originally created by AirBNB; KubeFlow, which enables you to execute data 
+science pipelines on top of Kubernetes; Apache Kafka, which originated from LinkedIn; 
+Apache Nifi, which delivers a very nice visual editor; 
+Apache SparkSQL (which enables you to use ANSI SQL and scales up to compute clusters 
+of 1000s of nodes), and NodeRED, which also provides a visual editor. 
+NodeRED consumes so little in resources that it even runs on small devices like a Raspberry 
+Pi. 
+
+Data Visualization Tools
+We’ll now introduce the most widely used open source data visualization tools. 
+We have to distinguish between programming libraries where you need to use code and tools 
+that contain a user interface. 
+The most popular libraries are covered in the next videos. 
+A similar approach uses Hue, which can create visualizations from SQL queries. 
+Kibana, a data exploration and visualization web application, is limited to Elasticsearch 
+(the data provider). 
+Finally, Apache Superset is a data exploration and visualization web application. 
+Model deployment is extremely important. 
+Once you’ve created a machine learning model capable of predicting some key aspects of 
+the future, you should make that model consumable by other developers and turn it into an API. 
+Apache Prediction IO currently only supports Apache Spark ML models for deployment, but 
+support for all sorts of other libraries is on the roadmap. 
+Seldon is an interesting product since it supports nearly every framework, including 
+TensorFlow, Apache SparkML, R, and scikit-learn. 
+Seldon can run on top of Kubernetes and Redhat OpenShift. 
+Another way to deploy SparkML models is by using MLeap. 
+Finally, TensorFlow can serve any of its models using the TensorFlow service. 
+You can deploy to an embedded device like a Raspberry Pi or a smartphone using TensorFlow 
+Lite, and even deploy to a web browser using TensorFlow dot JS. 
+
+Model Monitoring
+Model monitoring is another crucial step. 
+Once you’ve deployed a machine learning model, you need to keep track of its prediction 
+performance as new data arrives in order to maintain outdated models. 
+Following are some examples of model monitoring tools: 
+ModelDB is a machine model metadatabase where information about the models is stored and 
+can be queried. 
+It natively supports Apache Spark ML Pipelines and scikit-learn. 
+A generic, multi-purpose tool called Prometheus is also widely used for machine learning model 
+monitoring, although it’s not specifically made for this purpose. 
+Model performance is not exclusively measured through accuracy. 
+Model bias against protected groups like gender or race is also important. 
+The IBM AI Fairness 360 open-source toolkit does exactly this. 
+It detects and mitigates against bias in machine learning models. 
+Machine learning models, especially neural-network-based deep learning models, can be subject to adversarial attacks, where an attacker tries to fool the model with manipulated data or by manipulating the model itself. The IBM Adversarial Robustness 360 Toolbox can be used to detect vulnerability to adversarial attacks and help make the model more robust. Machine learning modes are often considered to be a black box that applies some mysterious “magic.” The IBM AI Explainability 360 Toolkit makes the machine learning process more understandable by finding similar examples within a dataset that can be presented to a user for manual comparison. The IBM AI Explainability 360 Toolkit can also illustrate training for a simpler machine learning model by explaining how different input variables affect the final decision of the model. 
+
+Code Assessment
+Options for code asset management tools have been greatly simplified: 
+For code asset management – also referred to as version management or version control 
+– Git is now the standard. Multiple services have emerged to support Git, with the most prominent being GitHub, which provides hosting for software development version management. 
+The runner-up is definitely GitLab, which has the advantage of being a fully open source 
+platform that you can host and manage yourself. Another choice is Bitbucket. Data asset management, also known as data governance or data lineage, is another crucial part of enterprise grade data science. Data has to be versioned and annotated with metadata. Apache Atlas is a tool that supports this task. Another interesting project, ODPi Egeria, is managed through the Linux Foundation and is an open ecosystem. It offers a set of open APIs, types, and interchange protocols that metadata repositories use to share and exchange data. Finally, Kylo is an open-source data lake management software platform that provides extensive support for a wide range of data asset management tasks. 
+This concludes part one of this two-part series.  Now let’s move on to part two.
+
+Libraries for Data Science
+In this video, we will review several data science libraries. 
+Libraries are a collection of functions and methods that enable you to perform a wide 
+variety of actions without writing the code yourself. 
+We will focus on Python libraries: Scientific Computing Libraries in Python 
+Visualization Libraries in Python High-Level Machine Learning and Deep Learning 
+Libraries – “High-level” simply means you don’t have to worry about details, although 
+this makes it difficult to study or improve Deep Learning Libraries in Python 
+Libraries used in other languages 
+Libraries usually contain built-in modules providing different functionalities that you 
+can use directly; these are sometimes called “frameworks.” 
+There are also extensive libraries, offering a broad range of facilities. 
+Pandas offers data structures and tools for effective data cleaning, manipulation, and 
+analysis. 
+It provides tools to work with different types of data. 
+The primary instrument of Pandas is a two-dimensional table consisting of columns and rows. 
+This table is called a “DataFrame” and is designed to provide easy indexing so you 
+can work with your data. 
+NumPy libraries are based on arrays, enabling you to apply mathematical functions to these 
+arrays. 
+Pandas is actually built on top of NumPy 
+Data visualization methods are a great way to communicate with others and show the meaningful 
+results of analysis. 
+These libraries enable you to create graphs, charts and maps. 
+The Matplotlib package is the most well-known library for data visualization, and it’s 
+excellent for making graphs and plots. 
+The graphs are also highly customizable. 
+Another high-level visualization library, Seaborn, is based on matplotlib. 
+Seaborn makes it easy to generate plots like heat maps, time series, and violin plots. 
+For machine learning, the Scikit-learn library contains tools for statistical modeling, including 
+regression, classification, clustering and others. 
+It is built on NumPy, SciPy, and matplotlib, and it’s relatively simple to get started. 
+For this high-level approach, you define the model and specify the parameter types you 
+would like to use. 
+For deep learning, Keras enables you to build the standard deep learning model. 
+Like Scikit-learn, the high-level interface enables you to build models quickly and simply. 
+It can function using graphics processing units (GPU), but for many deep learning cases 
+a lower-level environment is required. 
+TensorFlow is a low-level framework used in large scale production of deep learning models. 
+It’s designed for production but can be unwieldy for experimentation. 
+Pytorch is used for experimentation, making it simple for researchers to test their ideas 
+Apache Spark is a general-purpose cluster-computing framework that enables you to process data 
+using compute clusters. 
+This means that you process data in parallel, using multiple computers simultaneously. 
+The Spark library has similar functionality as 
+Pandas Numpy 
+Scikit-learn 
+Apache Spark data processing jobs can use Python 
+R Scala, or SQL 
+There are many libraries for Scala, which is predominately used in data engineering 
+but is also sometimes used in data science. 
+Let’s discuss some of the libraries that are complementary to Spark 
+Vegas is a Scala library for statistical data visualizations. 
+With Vegas, you can work with data files as well as Spark DataFrames. 
+For deep learning, you can use BigDL. 
+R has built-in functionality for machine learning and data visualization, but there are also 
+several complementary libraries: ggplot2 is a popular library for data visualization 
+in R. You can also use libraries that enable you 
+to interface with Keras and TensorFlow. 
+R has been the de-facto standard for open source data science but it is now being superseded 
+by Python.
+
+Application Programming Interfaces
+In this video we will discuss Application Programming Interfaces, or APIs. Specifically, 
+we will discuss: What an API is, API Libraries, REST APIs, including: 
+Request and Response. An API lets two pieces of software talk to each other. For example 
+you have your program, you have some data, you have other software components. You use 
+the API to communicate with the other software components.You don’t have to know how the 
+API works, you just need to know its inputs and outputs. Remember, the API only refers 
+to the interface, or the part of the library that you see. The “library” refers to 
+the whole thing. Consider the pandas library. Pandas is actually a set of software components, 
+many of which are not even written in Python. You have some data. 
+You have a set of software components. We use the pandas API to process the data 
+by communicating with the other software components. There can be a single software component at 
+the back end, but there can be a separate API for different languages. Consider TensorFlow, 
+written in C++. There are separate APIs in Python, JavaScript, 
+C++ Java, and Go. The API is simply the interface. 
+There are also multiple volunteer-developed APIs for TensorFlow; for example Julia, MATLAB, 
+R, Scala, and many more. REST APIs are another popular type of API. They enable you to communicate 
+using the internet, taking advantage of storage, greater data 
+access, artificial intelligence algorithms, and many other resources. The RE stands for 
+“Representational,” the S stands for “State,” the T stand for “Transfer.” In rest APIs, 
+your program is called the “client.” The API communicates with a web service that you 
+call through the internet. A set of rules governs Communication, Input or Request, and 
+Output or Response. Here are some common API-related terms. You or your code can be thought of 
+as a client. The web service is referred to as a resource. The client finds the service 
+through an endpoint. The client sends the request to the resource and the response to 
+the client. HTTP methods are a way of transmitting data over the internet We tell the REST APIs 
+what to do by sending a request. The request is usually communicated through an HTTP message. 
+The HTTP message usually contains a JSON file, which contains instructions for the operation 
+that we would like the service to perform. This operation is transmitted to the web service 
+over the internet. The service performs the operation. Similarly, the web service returns 
+a response through an HTTP message, where the information is usually returned using 
+
+a JSON file. This information is transmitted back to the 
+client. The Watson Speech to Text API is an example 
+of a REST API. This API converts speech to text. In the API call, you send a copy of 
+the audio file to the API; this process is called a post request. The API then sends 
+the text transcription of what the individual is saying. The API is making a get request. 
+The Watson Language-Translator API provides another example. You send the text you would 
+like to translate into the API, the API translates the text and sends the translation back to 
+you. In this case we translate English to Spanish. In this video, we’ve discussed 
+what an API is, API Libraries, REST APIs, including Request and Response. Thank you 
+for watching this video.
+
+Data Sets – Powering Data Science
+In this video we’ll discuss data sets: what they are, why they are important in data science, 
+and where to find them. 
+Let’s first loosely define what a data set is. 
+A data set is a structured collection of data. 
+Data embodies information that might be represented as text, numbers, or media such as images, 
+audio, or video files. 
+A data set that is structured as tabular data comprises a collection of rows, which in turn 
+comprise columns that store the information. 
+One popular tabular data format is "comma separated values," or CSV. 
+A CSV file is a delimited text file where each line represents a row and data values 
+are separated by a comma. 
+For example, imagine a data set of observations from a weather station. 
+Each row represents an observation at a given time, while each column contains information 
+about that particular observation, such as the temperature, humidity, and other weather 
+conditions. 
+Hierarchical or network data structures are typically used to represent relationships 
+between data. 
+Hierarchical data is organized in a tree-like structure, whereas network data might be stored 
+as a graph. 
+For example, the connections between people on a social networking website are often represented 
+in the form of a graph. 
+A data set might also include raw data files, such as images or audio. 
+The MNIST dataset is popular for data science. 
+It contains images of handwritten digits and is commonly used to train image processing 
+systems. 
+Traditionally, most data sets were considered to be private because they contain proprietary 
+or confidential information such as customer data, pricing data, or other commercially 
+sensitive information. 
+These data sets are typically not shared publicly. 
+Over time, more and more public and private entities such as scientific institutions, 
+governments, organizations and even companies have started to make data sets available to 
+the public as “open data," providing a wealth of information for free. 
+For example, the United Nations and federal and municipal governments around the world 
+have published many data sets on their websites, covering the economy, society, healthcare, 
+transportation, environment, and much more. 
+Access to these and other open data sets enable data scientists, researchers, analysts, and 
+others to uncover previously unknown and potentially useful insights. 
+They can create new applications for both commercial purposes and the public good. 
+They can also carry out new research. 
+Open data has played a significant role in the growth of data science, machine learning, 
+and artificial intelligence and has provided a way for practitioners to hone their skills 
+on a wide variety of data sets. 
+There are many open data sources on the internet. 
+You can find a comprehensive list of open data portals from around the world on the 
+Open Knowledge Foundation’s datacatalogs.org website. 
+The United Nations, the European Union, and many other governmental and intergovernmental 
+organizations maintain data repositories providing access to a wide range of information. 
+On Kaggle, which is a popular data science online community, you can find and contribute 
+data sets that might be of general interest. 
+Last but not least, Google provides a search engine for data sets that might help you find 
+the ones that have particular value for you. 
+It’s important to recognize that open data distribution and use might be restricted, 
+as defined by its licensing terms. 
+In absence of a license for open data distribution, many data sets were shared in the past under 
+open source software licenses. 
+These licenses were not designed to cover the specific considerations related to the 
+distribution and use of data sets. 
+To address the issue, the Linux Foundation created the Community Data License Agreement, 
+or CDLA. 
+Two licenses were initially created for sharing data: CDLA-Sharing and CDLA-Permissive. 
+The CDLA-Sharing license grants you permission to use and modify the data. 
+The license stipulates that if you publish your modified version of the data you must 
+do so under the same license terms as the original data. 
+The CDLA-Permissive license also grants you permission to use and modify the data. 
+However, you are not required to share changes to the data. 
+Note that neither license imposes any restrictions on results you might derive by using the data, 
+which is important in data science. 
+Let’s say, for example, that you are building a model that performs a prediction. 
+If you are training the model using CDLA-licensed data sets, you are under no obligation to 
+share the model, or to share it under a specific license if you do choose to share it. 
+In this video you’ve learned about open data sets, their role in data science, and 
+where to find them. 
+We’ve also introduced the Community Data License Agreement, which makes it easier to 
+share open data. 
+One important aspect that we didn’t cover in this video is data quality and accuracy, 
+which might vary greatly depending on who collected and contributed the data set. 
+While some open data sets might be good enough for personal use, they might not meet enterprise 
+requirements due to the impact they might have on the business. 
+In the next module, you will learn about the Data Asset eXchange, a curated open data repository.
+
+So, in the mtcars database, the vs variable represented the type of Engine. There were two types: V-shaped and straight shaped. Since the variable was numberic, it had to be converted to string for the box plot to be created. This code was used: mtcars$vs <- as.factor(mtcars$vs)
+To generate a box plot for the miles per gallon variable for the V- and straight- shaped engines, this code was used:  ggplot(aes(x=vs, y=mpg), data = mtcars) + geom_boxplot(). After this I attempted to add color to the plot with this code:
+
+> ggplot(aes(x=vs, y=mpg, fill = vs), data = mtcars) + 
++     geom_boxplot(alpha=0.3) +
++     theme(legend.position="none")
+> ggplot(aes(x=wt),data=mtcars) + geom_histogram(binwidth=0.5)
+> ggplot(aes(x=wt, fill = wt),data=mtcars) + geom_histogram(binwidth=0.5)
+> ggplot(aes(x=wt, fill = wt),data=mtcars) + geom_histogram(binwidth=0.5, alpha=0.3)
+> ggplot(aes(x=wt, fill = wt),data=mtcars) + geom_histogram(binwidth=0.5, beta=0.9)
+Warning message:
+________________________________________________
+Opening a Database in Python
+________________________________________________
+df = pd.read_csv('covid.csv')
+df.head(5)
+
+
+
+
+df.types
+df.tails
+df.header()
